@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class BelajarNestedIf {
     public static void main(String[] args) {
@@ -6,6 +7,13 @@ public class BelajarNestedIf {
         int umur = scanner.nextInt();
         if (umur <= 5 && umur >= 0) {
             System.out.println("Anda masih balita");
+            System.out.print("Masukan umur orang tua Anda: ");
+            int umurOrangTua = scanner.nextInt();
+            if (umurOrangTua<15) {
+                System.out.print("Sebaiknya meminta bantuan pengasuh anak");
+            } else {
+                System.out.print("Anda bisa mengasuh anak sendiri");
+            }
         } else if (umur > 5 && umur <= 19) {
             System.out.println("Anda sudah remaja");
         } else if (umur > 19) {
@@ -14,6 +22,4 @@ public class BelajarNestedIf {
             System.out.println("Umur Anda tidak valid");
         }
     }
-}
-    
 }
