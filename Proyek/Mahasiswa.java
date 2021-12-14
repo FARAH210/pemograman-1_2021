@@ -44,7 +44,7 @@ public class Mahasiswa extends Manusia {
     }
 
     public void getDetail() {
-        System.out.println(this.nim+" "+this.nama+" "+this.ipk+" "+this.tinggiBadan+" "+this.semester);
+        System.out.println(this.nim+" "+this.nama.toUpperCase()+" "+this.ipk+" "+this.tinggiBadan+" "+this.semester);
     }
 
 }
