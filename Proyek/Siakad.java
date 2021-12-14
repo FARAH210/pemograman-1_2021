@@ -29,7 +29,7 @@ public class Siakad {
     private static int tampilanMenu() {
         Scanner scan = new Scanner(System.in);
         System.out.println();
-        System.out.println("           **========== Menu ==========**           ");
+        System.out.println("           ========== Menu ==========          ");
         System.out.println();
         System.out.println("1. Melihat Data");
         System.out.println("2. Menambahkan Data");
