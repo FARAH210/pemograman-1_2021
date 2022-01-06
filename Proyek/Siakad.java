@@ -176,13 +176,22 @@ public class Siakad {
         String nim = scan.nextLine();
         int index = getIndexByNIM(nim);
         if (index==-1) {
-            System.out.println("Data yang anda akan hapus tidak ditemukan");
+            System.out.println("Data yang akan anda hapus tidak ketemu");
         } else {
             for (int i = index; i < jumlahData; i++) {
                 mahasiswa[i] = mahasiswa[i + 1];
+                System.out.print("Apakah anda yakin ingin menghapus data? = ");
+                String konfirmasi = scan.nextLine();
+                if (konfirmasi == "ya") {
+                    System.out.println("tidak dihapus");
+                    melihatData();
+                    break;
+
+            } else {
+                    jumlahData--;
+                    melihatData();
+                }
             }
-            jumlahData--;
-            melihatData();
         }
     }
 
