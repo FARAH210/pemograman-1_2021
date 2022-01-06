@@ -56,9 +56,11 @@ public class Siakad {
             System.out.println("Data belum tersedia");
         } else {
             System.out.println("Berikut ini data mahasiswa");
+            mahasiswa[0].getHeader();
             for (int i = 0; i < jumlahData; i++) {
                 mahasiswa[i].getDetail();
             }
+            ratarataIPK();
         }
         
     }
@@ -73,6 +75,7 @@ public class Siakad {
         double ipk = 0;
         double tinggiBadan = 0;
         double beratBadan = 0;
+        int semester = 0;
         try {
             System.out.print("Masukan IPK mahasiswa = ");
             ipk = scan.nextDouble();
@@ -80,13 +83,11 @@ public class Siakad {
             tinggiBadan = scan.nextDouble();
             System.out.print("Masukan Berat Badan mahasiswa = ");
             beratBadan = scan.nextDouble();
+            System.out.print("Masukan jumlah semester mahasiswa = ");
+            semester = scan.nextInt();
         } catch (Exception e) {
             System.out.println("Anda harus memasukan bilangan desimal dengan menggunakan tanda titik. Silahkan edit IPK anda setelah input data");
         }
-        scan.nextLine();
-        System.out.print("Masukan jumlah semester mahasiswa = ");
-        String semester = scan.nextLine();
-
         Mahasiswa inputMahasiswa = new Mahasiswa(nim, nama, ipk, semester);
         inputMahasiswa.setTinggiBadan(tinggiBadan);
         inputMahasiswa.setBeratBadan(beratBadan);
