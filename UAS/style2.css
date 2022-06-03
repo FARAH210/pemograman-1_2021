@@ -1,0 +1,28 @@
+div {
+    text-align: center;
+    line-height: 20px;
+    padding:10px;
+    display: inline-block;
+    margin: 20px 50px;
+    background: #CC9C75;
+}
+
+.content-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-list {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.video-list p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #A25B5B;
+}
